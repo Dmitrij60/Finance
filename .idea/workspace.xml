@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d5d1f3f-ef01-4dcc-94ee-c8bdd52991ad" name="Default Changelist" comment="Merge branch 'dmitrij60/api' of https://gitlab.com/bitbank-matbea/bitbank-codeception into dmitrij60/api&#10;&#10;# Conflicts:&#10;#&#9;tests/acceptance.suite.dist.yml">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bitbank-codeception/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bitbank-codeception/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOperationsCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOperationsCest.php" afterDir="false" />
@@ -46,11 +49,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/CabinetController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="65">
               <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bitbank-codeception/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -102,7 +119,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bitbank-codeception" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -242,6 +259,11 @@
             <path>
               <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="bitbank-codeception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,12 +398,12 @@
       <workItem from="1573754798839" duration="11350000" />
       <workItem from="1573837242355" duration="15059000" />
       <workItem from="1573888005187" duration="8753000" />
-      <workItem from="1573904570381" duration="624000" />
+      <workItem from="1573904570381" duration="1117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352441000" />
+    <option name="totallyTimeSpent" value="352934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,6 +416,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -566,7 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminBonusCest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -583,9 +605,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitbank-codeception/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/headeradm.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -722,6 +741,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
