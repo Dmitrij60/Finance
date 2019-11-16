@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d5d1f3f-ef01-4dcc-94ee-c8bdd52991ad" name="Default Changelist" comment="Merge branch 'dmitrij60/api' of https://gitlab.com/bitbank-matbea/bitbank-codeception into dmitrij60/api&#10;&#10;# Conflicts:&#10;#&#9;tests/acceptance.suite.dist.yml">
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOperationsCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOperationsCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOrdersCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOrdersCest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedRequisitesCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedRequisitesCest.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/bitbank-codeception/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/CabinetController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Card.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;</find>
+      <find>ajax</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>=&gt;</replace>
+      <replace>'</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bitbank-codeception" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminBlockliteCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminCommonCest.php" />
+        <option value="$PROJECT_DIR$/frontend/web/bundle.js" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/ProcessingCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOrdersCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedReportCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedRequisitesCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedSettingsCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/_support/AcceptanceTester.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/acceptance/SecondCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/acceptance/FirstCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/acceptance/emulateUserBehaviorCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminLimitsCest.php" />
+        <option value="$PROJECT_DIR$/models/Blog.php" />
+        <option value="$PROJECT_DIR$/views/site/create.php" />
+        <option value="$PROJECT_DIR$/views/layouts/footer.php" />
+        <option value="$PROJECT_DIR$/views/task/create.php" />
+        <option value="$PROJECT_DIR$/views/user/register.php" />
+        <option value="$PROJECT_DIR$/components/AdminBase.php" />
+        <option value="$PROJECT_DIR$/views/admin/update.php" />
+        <option value="$PROJECT_DIR$/views/admin/create.php" />
+        <option value="$PROJECT_DIR$/views/layouts/headeradm.php" />
+        <option value="$PROJECT_DIR$/views/admin/index.php" />
+        <option value="$PROJECT_DIR$/controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/components/Pagination.php" />
+        <option value="$PROJECT_DIR$/models/Task.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminPartnersCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminTrafficCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminHotStorageCest.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/_support/ApiTester.php" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/tests/api/AdminBonusCest.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/db_params.php" />
+        <option value="$PROJECT_DIR$/components/Db.php" />
+        <option value="$PROJECT_DIR$/controllers/TaskController.php" />
+        <option value="$PROJECT_DIR$/models/Cart.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/config/routes.php" />
+        <option value="$PROJECT_DIR$/views/layouts/header.php" />
+        <option value="$PROJECT_DIR$/views/user/login.php" />
+        <option value="$PROJECT_DIR$/views/site/index.php" />
+        <option value="$PROJECT_DIR$/template/css/style.css" />
+        <option value="$PROJECT_DIR$/bitbank-codeception/composer.json" />
+        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/views/cabinet/index.php" />
+        <option value="$PROJECT_DIR$/components/Autoload.php" />
+        <option value="$PROJECT_DIR$/components/Router.php" />
+        <option value="$PROJECT_DIR$/controllers/CabinetController.php" />
+        <option value="$PROJECT_DIR$/models/Card.php" />
+        <option value="$PROJECT_DIR$/models/User.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/se/selenium-server-standalone" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/enm1989/chromedriver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/composer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/jakoch/phantomjs-installer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/jakoch/phantomjs" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/flow/jsonpath" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="985" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="htdocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\XAMMP\htdocs\views\task" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\XAMMP\htdocs\models" />
+      <recent name="F:\XAMMP\htdocs\views\cabinet" />
+      <recent name="F:\XAMMP\htdocs" />
+      <recent name="F:\XAMMP\htdocs\views\admin" />
+      <recent name="F:\XAMMP\htdocs\views\layouts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d5d1f3f-ef01-4dcc-94ee-c8bdd52991ad" name="Default Changelist" comment="" />
+      <created>1553670184547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553670184547</updated>
+      <workItem from="1553670192006" duration="610000" />
+      <workItem from="1553671020669" duration="2118000" />
+      <workItem from="1553769574186" duration="6160000" />
+      <workItem from="1553777692749" duration="2704000" />
+      <workItem from="1554234117847" duration="2498000" />
+      <workItem from="1554836209703" duration="2615000" />
+      <workItem from="1555270022956" duration="882000" />
+      <workItem from="1555584884196" duration="689000" />
+      <workItem from="1555586895197" duration="2368000" />
+      <workItem from="1555917288899" duration="1178000" />
+      <workItem from="1556007501081" duration="7161000" />
+      <workItem from="1556019749951" duration="2935000" />
+      <workItem from="1556092789921" duration="10641000" />
+      <workItem from="1556024121899" duration="688000" />
+      <workItem from="1556087761998" duration="7573000" />
+      <workItem from="1556097351909" duration="8558000" />
+      <workItem from="1556170381501" duration="57000" />
+      <workItem from="1556177460656" duration="11524000" />
+      <workItem from="1556260262494" duration="10356000" />
+      <workItem from="1556517657971" duration="14333000" />
+      <workItem from="1556607580212" duration="10795000" />
+      <workItem from="1557165909273" duration="3212000" />
+      <workItem from="1559134277901" duration="7950000" />
+      <workItem from="1559154007001" duration="4032000" />
+      <workItem from="1562006001222" duration="2061000" />
+      <workItem from="1567328949002" duration="2336000" />
+      <workItem from="1567420604484" duration="3938000" />
+      <workItem from="1567444673268" duration="12462000" />
+      <workItem from="1568276219853" duration="6054000" />
+      <workItem from="1568381205151" duration="428000" />
+      <workItem from="1568551621689" duration="2763000" />
+      <workItem from="1568646076213" duration="6097000" />
+      <workItem from="1568699678427" duration="4554000" />
+      <workItem from="1568800411762" duration="28000" />
+      <workItem from="1568804535634" duration="6905000" />
+      <workItem from="1568881315994" duration="4225000" />
+      <workItem from="1569145185942" duration="1498000" />
+      <workItem from="1569251825001" duration="1753000" />
+      <workItem from="1569254306036" duration="2735000" />
+      <workItem from="1570091553135" duration="2956000" />
+      <workItem from="1570099636616" duration="558000" />
+      <workItem from="1570352586187" duration="7377000" />
+      <workItem from="1570438274952" duration="6162000" />
+      <workItem from="1570526456403" duration="4736000" />
+      <workItem from="1570634492291" duration="1218000" />
+      <workItem from="1570695283477" duration="5225000" />
+      <workItem from="1570795947143" duration="1223000" />
+      <workItem from="1570887275488" duration="2177000" />
+      <workItem from="1570993151082" duration="2287000" />
+      <workItem from="1571070044802" duration="1111000" />
+      <workItem from="1571159783927" duration="3665000" />
+      <workItem from="1571252412740" duration="3455000" />
+      <workItem from="1571327222573" duration="3707000" />
+      <workItem from="1571333628277" duration="9394000" />
+      <workItem from="1571409759701" duration="3344000" />
+      <workItem from="1571679032402" duration="1234000" />
+      <workItem from="1571765321532" duration="569000" />
+      <workItem from="1571852065222" duration="3337000" />
+      <workItem from="1571937807347" duration="541000" />
+      <workItem from="1572022818685" duration="3957000" />
+      <workItem from="1572032238545" duration="1896000" />
+      <workItem from="1572093225845" duration="3197000" />
+      <workItem from="1572290110405" duration="810000" />
+      <workItem from="1572375254817" duration="1751000" />
+      <workItem from="1572380636709" duration="608000" />
+      <workItem from="1572456222415" duration="3604000" />
+      <workItem from="1572548170728" duration="1687000" />
+      <workItem from="1572550325081" duration="385000" />
+      <workItem from="1572551097512" duration="1080000" />
+      <workItem from="1572628806589" duration="1054000" />
+      <workItem from="1572629872166" duration="36000" />
+      <workItem from="1572633702000" duration="1218000" />
+      <workItem from="1572688627829" duration="39993000" />
+      <workItem from="1572769504321" duration="9522000" />
+      <workItem from="1572888598842" duration="1936000" />
+      <workItem from="1572975565604" duration="171000" />
+      <workItem from="1573754798839" duration="11350000" />
+      <workItem from="1573837242355" duration="15059000" />
+      <workItem from="1573888005187" duration="8753000" />
+      <workItem from="1573904570381" duration="624000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="352441000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30738255" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32909605" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" weight="0.27824858" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.27824858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29932886" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32909605" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49731544" weight="0.27824858" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026846" side_tool="true" weight="0.27824858" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedReportCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedOrdersCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminProcessingCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminValidatorsCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedSettingsCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/TrustedSupportCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminApplicationCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminBlockliteCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="180" column="30" selection-start-line="180" selection-start-column="20" selection-end-line="180" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/acceptance/SecondCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/acceptance/FirstCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/_support/FunctionalTester.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/_support/UnitTester.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/_support/AcceptanceTester.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4689">
+          <caret line="419" column="28" lean-forward="true" selection-start-line="419" selection-start-column="28" selection-end-line="419" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/acceptance/emulateUserBehaviorCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminLimitsCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="324" column="43" selection-start-line="322" selection-start-column="12" selection-end-line="324" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/AdminBase.php" />
+    <entry file="file://$PROJECT_DIR$/views/admin/create.php" />
+    <entry file="file://$PROJECT_DIR$/views/admin/update.php" />
+    <entry file="file://$PROJECT_DIR$/template/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/views/task/create.php" />
+    <entry file="file://$PROJECT_DIR$/views/admin/index.php" />
+    <entry file="file://$PROJECT_DIR$/components/Pagination.php" />
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminPartnersCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="186" column="28" lean-forward="true" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminTrafficCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminHotStorageCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/api/AdminBonusCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/tests/_support/ApiTester.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25942">
+          <caret line="1527" column="7" selection-start-line="1527" selection-start-column="7" selection-end-line="1527" selection-end-column="7" />
+          <folding>
+            <element signature="e#7#37#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/headeradm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/AdminController.php" />
+    <entry file="file://$PROJECT_DIR$/models/Task.php" />
+    <entry file="file://$PROJECT_DIR$/views/user/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitbank-codeception/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cabinet/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db_params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CabinetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/se/selenium-server-standalone" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/enm1989/chromedriver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/composer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/jakoch/phantomjs-installer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/jakoch/phantomjs" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/bitbank-codeception/vendor/flow/jsonpath" />
+    </include_path>
+  </component>
+</project>
