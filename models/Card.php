@@ -1,5 +1,10 @@
 <?php
 
+namespace FinanceService\models;
+
+use FinanceService\components\Db;
+use \PDO;
+
 class Card
 {
     /**
@@ -84,11 +89,33 @@ class Card
         $result = $db->query('SELECT balance FROM card WHERE user_id = ' . $userId);
         $result->setFetchMode(PDO::FETCH_ASSOC);
         $balance = $result->fetch();
+        $withdraw = intval($withdraw);
         $balance = intval($balance['balance']);
         $result = $balance - $withdraw;
         if ($result < 0) {
             return false;
         }
         return true;
+    }
+
+    /**
+     * @param $withdraw
+     * @param $userId
+     * @return array|bool
+     */
+    public static function withdrawValidate($withdraw, $userId)
+    {
+        $errors = false;
+        if (!isset($withdraw) || empty($withdraw)) {
+            $errors[] = 'Заполните поля';
+        }
+        if (!Card::checkField($withdraw)) {
+            $errors[] = 'Введите корректное значение';
+        }
+        if (!Card::checkBalance($withdraw, $userId)) {
+            $errors[] = 'У Вас не хватает средств';
+        }
+        return $errors;
+
     }
 }

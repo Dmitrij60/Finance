@@ -1,5 +1,7 @@
 <?php
 
+namespace FinanceService\components;
+
 /**
  * Class Router
  * @package components
@@ -42,10 +44,13 @@ class Router
                 $actionName = 'action' . ucfirst(array_shift($segments));
                 $parameters = $segments;
                 $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
-                if (file_exists($controllerFile)) {
-                    include_once($controllerFile);
-                }
-                $controllerObject = new $controllerName;
+              /*  if (file_exists($controllerFile)) {
+                    require_once($controllerFile);
+                }*/
+                $project_name = 'FinanceService';
+                $package_name = 'controllers';
+                $fully_qualified_name = $project_name . '\\' . $package_name . '\\' . $controllerName;
+                $controllerObject = new $fully_qualified_name();
                 $result = call_user_func_array(array($controllerObject, $actionName), $parameters);
                 if ($result != null) {
                     break;

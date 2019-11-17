@@ -1,5 +1,10 @@
 <?php
 
+namespace FinanceService\models;
+
+use FinanceService\components\Db;
+use \PDO;
+
 class User
 {
     /**
@@ -137,5 +142,47 @@ class User
             $result->execute();
             return $result->fetch();
         }
+    }
+
+    /**
+     * @param $email
+     * @param $password
+     * @param $userId
+     * @return array|bool
+     */
+    public static function loginValidate($email, $password, $userId)
+    {
+        $errors = false;
+        if (!User::checkEmail($email)) {
+            $errors[] = 'Неправильный email';
+        }
+        if ($userId == false) {
+            $errors[] = 'Неправильные данные для входа на сайт';
+        }
+        return $errors;
+    }
+
+    /**
+     * @param $name
+     * @param $email
+     * @param $password
+     * @return array|bool
+     */
+    public static function registerValidate($name, $email, $password)
+    {
+        $errors = false;
+        if (!User::checkName($name)) {
+            $errors[] = 'Имя не должно быть короче 2-х символов';
+        }
+        if (!User::checkEmail($email)) {
+            $errors[] = 'Неправильный email';
+        }
+        if (!User::checkPassword($password)) {
+            $errors[] = 'Пароль не должен быть короче 6-ти символов';
+        }
+        if (User::checkEmailExists($email)) {
+            $errors[] = 'Такой email уже используется';
+        }
+        return $errors;
     }
 }

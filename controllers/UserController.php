@@ -1,5 +1,10 @@
 <?php
 
+namespace FinanceService\controllers;
+
+use FinanceService\models\User;
+use FinanceService\models\Card;
+
 class UserController
 {
     /**
@@ -17,19 +22,7 @@ class UserController
             $name = $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $errors = false;
-            if (!User::checkName($name)) {
-                $errors[] = 'Имя не должно быть короче 2-х символов';
-            }
-            if (!User::checkEmail($email)) {
-                $errors[] = 'Неправильный email';
-            }
-            if (!User::checkPassword($password)) {
-                $errors[] = 'Пароль не должен быть короче 6-ти символов';
-            }
-            if (User::checkEmailExists($email)) {
-                $errors[] = 'Такой email уже используется';
-            }
+            $errors = User::registerValidate($name, $email, $password);
             if ($errors == false) {
                 User::register($name, $email, $password);
                 $userId = User::checkUserData($email, $password);
@@ -52,17 +45,9 @@ class UserController
         if (isset($_POST['submit'])) {
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $errors = false;
-            if (!User::checkEmail($email)) {
-                $errors[] = 'Неправильный email';
-            }
-            if (!User::checkPassword($password)) {
-                $errors[] = 'Пароль не должен быть короче 6-ти символов';
-            }
             $userId = User::checkUserData($email, $password);
-            if ($userId == false) {
-                $errors[] = 'Неправильные данные для входа на сайт';
-            } else {
+            $errors = User::loginValidate($email, $password, $userId);
+            if ($errors == false) {
                 User::auth($userId);
                 header('Location: /cabinet');
             }
@@ -71,6 +56,9 @@ class UserController
         return true;
     }
 
+    /**
+     * Logout
+     */
     public function actionLogout()
     {
         unset($_SESSION['user']);

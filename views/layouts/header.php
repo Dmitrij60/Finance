@@ -1,3 +1,4 @@
+<?php use FinanceService\models\User; ?>
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>

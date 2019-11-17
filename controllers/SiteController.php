@@ -1,5 +1,6 @@
 <?php
 
+namespace FinanceService\controllers;
 
 class SiteController
 {
