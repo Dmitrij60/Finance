@@ -2,18 +2,31 @@
 
 namespace FinanceService\models;
 
+use Exception;
 use FinanceService\components\Db;
 use \PDO;
 
 class User
 {
     /**
+     * User constructor.
+     * @param $db
+     * @throws Exception
+     */
+    public function __construct($db) {
+        if ($db instanceof Db) {
+            $this->db = $db;
+        } else {
+            throw new Exception('Give me a Database object');
+        }
+    }
+    /**
      * @param $name
      * @param $email
      * @param $password
      * @return bool
      */
-    public static function register($name, $email, $password)
+    public static function register($name, $email, $hashed_password)
     {
         $db = Db::getConnection();
         $sql = 'INSERT INTO user (name, email, password) '
@@ -21,7 +34,7 @@ class User
         $result = $db->prepare($sql);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
-        $result->bindParam(':password', $password, PDO::PARAM_STR);
+        $result->bindParam(':password', $hashed_password, PDO::PARAM_STR);
         return $result->execute();
     }
 
@@ -30,13 +43,12 @@ class User
      * @param string $password
      * @return mixed : ingeger user id or false
      */
-    public static function checkUserData($email, $password)
+    public static function checkUserData($email)
     {
         $db = Db::getConnection();
-        $sql = 'SELECT * FROM user WHERE email = :email AND password = :password';
+        $sql = 'SELECT * FROM user WHERE email = :email ';
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
-        $result->bindParam(':password', $password, PDO::PARAM_STR);
         $result->execute();
         $user = $result->fetch();
         if ($user) {
@@ -184,5 +196,44 @@ class User
             $errors[] = 'Такой email уже используется';
         }
         return $errors;
+    }
+
+    /**
+     * @param $password
+     * @return string
+     */
+    public static function generateHash($password)
+    {
+        if (defined("CRYPT_BLOWFISH") && CRYPT_BLOWFISH) {
+            $salt = '$2y$11$' . substr(md5(uniqid(rand(), true)), 0, 22);
+            return crypt($password, $salt);
+        }
+    }
+
+    public function getNews() {
+        $result = $this->db->row('SELECT title, description FROM news');
+        return $result;
+    }
+
+    /**
+     * @param $login
+     * @return mixed
+     */
+    public static function checkUserDataHash($email)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        // Текст запроса к БД
+        $sql = "SELECT * FROM user WHERE email = :email";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':email', $email, PDO::PARAM_STR);
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $result->execute();
+        return $result->fetch();
+    }
+
+    public static function verify($password, $hashedPassword) {
+        return crypt($password, $hashedPassword) == $hashedPassword;
     }
 }

@@ -4,6 +4,7 @@ namespace FinanceService\models;
 
 use FinanceService\components\Db;
 use \PDO;
+use PDOException;
 
 class Card
 {
@@ -39,10 +40,11 @@ class Card
 
     /**
      * @param $userId
-     * @param $balance
+     * @param $balanceOnCard
+     * @param $withdraw
      * @return bool
      */
-    public static function withdraw($userId, $balance)
+    public static function withdraw($userId, $balanceOnCard)
     {
         $db = Db::getConnection();
 
@@ -50,17 +52,19 @@ class Card
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         session_write_close();
         try {
+            $db->setAttribute(PDO::ATTR_AUTOCOMMIT, 0);
             $db->beginTransaction();
+            $result = $db->prepare("SELECT balance, user_id FROM card WHERE user_id = " . $userId . " LOCK IN SHARE MODE;");
+            $result->execute();
             $sql = "UPDATE card SET balance = :balance WHERE user_id = :user_id";
             $result = $db->prepare($sql);
             $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
-            $result->bindParam(':balance', $balance, PDO::PARAM_STR);
+            $result->bindParam(':balance', $balanceOnCard, PDO::PARAM_STR);
             $result->execute();
             $db->commit();
         } catch (PDOException $e) {
             $db->rollBack();
-            header('Refresh: 0');
-            echo 'PDOException: ' . $e->getCode() . '|' . $e->getMessage();
+            echo '<br><br><br>'.'PDOException: ' . $e->getCode() . '|' . $e->getMessage();
             return false;
         }
         return true;

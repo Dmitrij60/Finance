@@ -7,6 +7,7 @@ use FinanceService\models\Card;
 
 class UserController
 {
+
     /**
      * @return bool
      */
@@ -24,11 +25,15 @@ class UserController
             $password = $_POST['password'];
             $errors = User::registerValidate($name, $email, $password);
             if ($errors == false) {
-                User::register($name, $email, $password);
-                $userId = User::checkUserData($email, $password);
-                User::auth($userId);
-                Card::activateBalance($card_number, $balance, $userId);
-                header('Location: /cabinet');
+                $hashed_password = User::generateHash($password);
+                if (!User::register($name, $email, $hashed_password)) {
+                    $errors[] = 'Ошибка Базы Данных';
+                } else {
+                    $userId = User::checkUserData($email, $hashed_password);
+                    User::auth($userId);
+                    Card::activateBalance($card_number, $balance, $userId);
+                    header("Location:/cabinet");
+                }
             }
         }
         require_once(ROOT . '/views/user/register.php');
@@ -45,16 +50,23 @@ class UserController
         if (isset($_POST['submit'])) {
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $userId = User::checkUserData($email, $password);
-            $errors = User::loginValidate($email, $password, $userId);
-            if ($errors == false) {
-                User::auth($userId);
-                header('Location: /cabinet');
+            $errors = false;
+            if (!User::checkName($email)) {
+                $errors[] = 'Неккоректное имя';
             }
+            $check = User::checkUserDataHash($email);
+            $hashed_password = $check['password'];
+            $userId = $check['id'];
+            if (User::verify($password, $hashed_password)) {
+                User::auth($userId);
+                header("Location: /cabinet");
+            } else $errors[] = 'Неправильные данные для входа на сайт';
         }
+
         require_once(ROOT . '/views/user/login.php');
         return true;
     }
+
 
     /**
      * Logout
