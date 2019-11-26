@@ -9,14 +9,26 @@ use PDOException;
 class Card
 {
     /**
+     * @var Db
+     */
+    private $db;
+
+    function __construct()
+    {
+        $this->db = Db::Instance();
+    }
+
+    /**
      * @param $userId
      * @return mixed
      */
-    public static function getCardRequisites($userId)
+    public function getCardRequisites($userId)
     {
-        $db = Db::getConnection();
-        $result = $db->query('SELECT card_number, balance FROM card WHERE user_id = ' . $userId);
+        $pdo = $this->db->get_pdo();
+        $result = $pdo->prepare('SELECT card_number, balance FROM card WHERE user_id = :user_id');
+        $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
         $result->setFetchMode(PDO::FETCH_ASSOC);
+        $result->execute();
         return $result->fetch();
     }
 
@@ -28,98 +40,39 @@ class Card
      */
     public static function activateBalance($card_number, $balance, $user_id)
     {
-        $db = Db::getConnection();
-        $sql = 'INSERT INTO card (card_number, balance, user_id) '
-            . 'VALUES (:card_number, :balance, :user_id)';
-        $result = $db->prepare($sql);
-        $result->bindParam(':card_number', $card_number, PDO::PARAM_STR);
-        $result->bindParam(':balance', $balance, PDO::PARAM_STR);
-        $result->bindParam(':user_id', $user_id, PDO::PARAM_INT);
-        return $result->execute();
+        $pdo = Db::Instance()
+            ->Insert('card')
+            ->values(['card_number' => $card_number, 'balance' => $balance, 'user_id' => $user_id]);
+        return $pdo->execute(['card_number' => $card_number, 'balance' => $balance, 'user_id' => $user_id]);
     }
 
     /**
      * @param $userId
      * @param $balanceOnCard
-     * @param $withdraw
      * @return bool
      */
-    public static function withdraw($userId, $balanceOnCard)
+    public function withdraw($userId, $balanceOnCard)
     {
-        $db = Db::getConnection();
-
-        $db->setAttribute(PDO::ATTR_AUTOCOMMIT, 0);
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo = $this->db->get_pdo();
+        $pdo->setAttribute(PDO::ATTR_AUTOCOMMIT, 0);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         session_write_close();
         try {
-            $db->setAttribute(PDO::ATTR_AUTOCOMMIT, 0);
-            $db->beginTransaction();
-            $result = $db->prepare("SELECT balance, user_id FROM card WHERE user_id = " . $userId . " LOCK IN SHARE MODE;");
+            $pdo->setAttribute(PDO::ATTR_AUTOCOMMIT, 0);
+            $pdo->beginTransaction();
+            $result = $pdo->prepare("SELECT balance, user_id FROM card WHERE user_id = " . $userId . " LOCK IN SHARE MODE;");
             $result->execute();
             $sql = "UPDATE card SET balance = :balance WHERE user_id = :user_id";
-            $result = $db->prepare($sql);
+            $result = $pdo->prepare($sql);
             $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
             $result->bindParam(':balance', $balanceOnCard, PDO::PARAM_STR);
             $result->execute();
-            $db->commit();
+            $pdo->commit();
         } catch (PDOException $e) {
-            $db->rollBack();
-            echo '<br><br><br>'.'PDOException: ' . $e->getCode() . '|' . $e->getMessage();
+            $pdo->rollBack();
+            echo '<br><br><br>' . 'PDOException: ' . $e->getCode() . '|' . $e->getMessage();
             return false;
         }
         return true;
-    }
-
-    /**
-     * @param $email
-     * @return bool
-     */
-    public static function checkField($email)
-    {
-        if (filter_var($email, FILTER_VALIDATE_FLOAT)) {
-            return true;
-        }
-        return false;
-    }
-
-    /**
-     * @param $withdraw
-     * @param $userId
-     * @return bool
-     */
-    public static function checkBalance($withdraw, $userId)
-    {
-        $db = Db::getConnection();
-        $result = $db->query('SELECT balance FROM card WHERE user_id = ' . $userId);
-        $result->setFetchMode(PDO::FETCH_ASSOC);
-        $balance = $result->fetch();
-        $withdraw = intval($withdraw);
-        $balance = intval($balance['balance']);
-        $result = $balance - $withdraw;
-        if ($result < 0) {
-            return false;
-        }
-        return true;
-    }
-
-    /**
-     * @param $withdraw
-     * @param $userId
-     * @return array|bool
-     */
-    public static function withdrawValidate($withdraw, $userId)
-    {
-        $errors = false;
-        if (!isset($withdraw) || empty($withdraw)) {
-            $errors[] = 'Заполните поля';
-        }
-        if (!Card::checkField($withdraw)) {
-            $errors[] = 'Введите корректное значение';
-        }
-        if (!Card::checkBalance($withdraw, $userId)) {
-            $errors[] = 'У Вас не хватает средств';
-        }
-        return $errors;
-
     }
 }

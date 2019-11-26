@@ -6,10 +6,10 @@
     <div class="starter-template">
         <div class="content-start-page">
             <h3>Ваша карта №</h3>
-            <div><?php echo $card['card_number']; ?></div>
+            <div><?php echo $requisites[0]; ?></div>
             <br>
             <h3>Баланс Вашей карты:</h3>
-            <div><?php echo $card['balance'] . ' $'; ?></div>
+            <div><?php echo $requisites[1] . ' $'; ?></div>
             <br>
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4 padding-right">

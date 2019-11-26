@@ -2,6 +2,7 @@
 
 namespace FinanceService\controllers;
 
+use FinanceService\components\Validator;
 use FinanceService\models\User;
 use FinanceService\models\Card;
 
@@ -18,19 +19,21 @@ class UserController
         $password = '';
         $balance = 6000;
         $card_number = strval(time());
+        $errors = false;
         $result = false;
         if (isset($_POST['submit'])) {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $errors = User::registerValidate($name, $email, $password);
-            if ($errors == false) {
-                $hashed_password = User::generateHash($password);
-                if (!User::register($name, $email, $hashed_password)) {
+            $validate = new Validator;
+            $errors = $validate->registerValidate($name, $email, $password);
+            if ($errors === false) {
+                $usr = new User;
+                if (!$usr->register($name, $email, $password)) {
                     $errors[] = 'Ошибка Базы Данных';
                 } else {
-                    $userId = User::checkUserData($email, $hashed_password);
-                    User::auth($userId);
+                    $userId = $usr->checkUserData($email);
+                    $usr->auth($userId);
                     Card::activateBalance($card_number, $balance, $userId);
                     header("Location:/cabinet");
                 }
@@ -47,18 +50,14 @@ class UserController
     {
         $email = '';
         $password = '';
+        $errors = false;
         if (isset($_POST['submit'])) {
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $errors = false;
-            if (!User::checkName($email)) {
-                $errors[] = 'Неккоректное имя';
-            }
-            $check = User::checkUserDataHash($email);
-            $hashed_password = $check['password'];
-            $userId = $check['id'];
-            if (User::verify($password, $hashed_password)) {
-                User::auth($userId);
+            $usr = new User;
+            $check = $usr->checkUserDataHash($email);
+            if ($usr->verify($password, $check['password'])) {
+                $usr->auth($check['id']);
                 header("Location: /cabinet");
             } else $errors[] = 'Неправильные данные для входа на сайт';
         }
@@ -66,7 +65,6 @@ class UserController
         require_once(ROOT . '/views/user/login.php');
         return true;
     }
-
 
     /**
      * Logout

@@ -43,10 +43,6 @@ class Router
                 $controllerName = ucfirst($controllerName);
                 $actionName = 'action' . ucfirst(array_shift($segments));
                 $parameters = $segments;
-                $controllerFile = ROOT . '/controllers/' . $controllerName . '.php';
-              /*  if (file_exists($controllerFile)) {
-                    require_once($controllerFile);
-                }*/
                 $project_name = 'FinanceService';
                 $package_name = 'controllers';
                 $fully_qualified_name = $project_name . '\\' . $package_name . '\\' . $controllerName;
